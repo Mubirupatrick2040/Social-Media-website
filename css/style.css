@@ -145,3 +145,28 @@ header .search-area {
     background: #2196F3;
 }
 
+/*.....................Content area.................*/
+
+#content-area .side-column {
+    width: 35%;
+    margin: 0 2.5%;
+    float: left;   
+}
+
+#content-area .main-area {
+    width: 55%;
+    margin: 0 2.5%;    
+    float: left;     
+}
+
+#content-area .side-column .widget-box .body .body-img {
+    background: url(../image/mountain.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 33.33%;
+    height: 110px;
+    float: left;
+    display: inline-block;
+}
