@@ -147,17 +147,59 @@ header .search-area {
 
 /*.....................Content area.................*/
 
+#content-area {
+    background: #FAFAFA;
+    overflow: auto;
+    padding: 50px 0;  
+}
+
 #content-area .side-column {
     width: 35%;
     margin: 0 2.5%;
-    float: left;   
+    float: left;
+    max-width: 380px;   
 }
 
-#content-area .main-area {
-    width: 55%;
-    margin: 0 2.5%;    
-    float: left;     
+#content-area .widget-box {
+    background: #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 3px 3px 12px -1px rgba(150,145,150,1);
+    -moz-box-shadow: 3px 3px 12px -1px rgba(150,145,150,1);
+    box-shadow: 3px 3px 12px -1px rgba(150,145,150,1);
+    margin: 0 0 15px 0;
+    padding: 15px;
+    overflow: auto;
 }
+.widget-icon-container {
+    display: inline-block;
+}
+
+#content-area .widget-box .head .widget-icon {
+    background: #BFBFBF;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-area .widget-box .head .widget-icon .fa {
+    max-width: 50%;
+    font-size: 22px;
+}
+
+
+#content-area .widget-box .head .widget-title {
+    display: inline-block;
+    padding: 0 0 0 8px;
+}
+
+#content-area .widget-box .body {
+    padding: 20px 0;
+}
+
 
 #content-area .side-column .widget-box .body .body-img {
     background: url(../image/mountain.jpg) no-repeat center center; 
@@ -169,4 +211,53 @@ header .search-area {
     height: 110px;
     float: left;
     display: inline-block;
+}
+
+/*.....................Sub-menu...................*/
+
+#content-area .main-area {
+    width: 55%;
+    margin: 0 2.5%;    
+    float: left;     
+}
+
+#content-area .main-area .widget-box.sub-menu {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+#content-area .main-area .sub-menu ul {
+    padding: 0;
+    
+}
+
+#content-area .main-area .sub-menu ul li {
+    display: inline-block;
+    width: 20%;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    border-bottom: 3px solid #ffffff;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+#content-area .main-area .sub-menu ul li:hover {
+    border-bottom: 3px solid #2196F3;
+    color: #2196F3;
+}
+
+#content-area .main-area .sub-menu ul li:nth-child(5) {
+    padding: 28px 0 21px 0;
+}
+
+#content-area .main-area .sub-menu ul li .fa {
+    font-size: 20px;
+}
+
+#content-area .main-area .sub-menu ul li span {
+    display: block;
+    margin: 15px 0 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
 }
