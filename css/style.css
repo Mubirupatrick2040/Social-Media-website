@@ -6,6 +6,11 @@ html {
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+/*......................Header.................. */
 header {
     background-color: #3B5998;
     padding: 13px;
@@ -13,7 +18,6 @@ header {
 
 header a {
     color: white;
-    text-decoration: none;
     font-size: 12px;
     font-weight: 300;
 }
@@ -32,7 +36,6 @@ header .logo-area {
 
 header .logo-area a {
     color: white;
-    text-decoration: none;
     font-size: 20px;
 }
 
@@ -85,5 +88,60 @@ header .search-area {
     width: 40%;
     margin-left: -4px;
     text-align: right;
+}
+
+/*.....................Top area.................*/
+
+#top-area {
+        padding: 200px 15px 90px 20px;
+        background: url(../image/mountain.jpg) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+#top-area .profile-info .user-image {
+    padding: 10px;
+    display: inline-block;
+}
+
+#top-area .profile-info .user-image img {
+    border-radius: 50%;
+}
+
+#top-area .profile-info .user-details {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+#top-area .profile-info .user-details h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#top-area .profile-info .user-details a {
+    display: inline-block;
+    background: rgba(255,255,255,0.3);
+    margin-left: -3px;
+    margin-right: 5%;
+    width: 45%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    transition: background 0.4s ease-in-out;
+}
+
+#top-area .profile-info .user-details a:hover {
+    background: #2196F3;
 }
 
